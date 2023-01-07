@@ -235,10 +235,13 @@ public class DemoController {
 	@RequestMapping("/demo/demolist.do")
 	public ModelAndView  demoList(ModelAndView mv) {
 		List<Demo> list = service.selectDemoList();
+		System.out.println(list);
 		mv.addObject("demos",list);
-		mv.setViewName("demo/demolist");
-		System.out.println(mv);
+		mv.setViewName("demo/demolist");//화면선택
 		return mv;
 	}
+	
+	
+	
 	
 }

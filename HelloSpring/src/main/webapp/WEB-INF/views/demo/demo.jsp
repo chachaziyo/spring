@@ -130,7 +130,7 @@ div#demo-container{
 			<div class="form-group row">
 				<div class="col-sm-12">
 					<button type="button" class="col-sm-12 btn btn-outline-primary"
-					onclick="requestSend('demo/demolist.do')">dev list</button>
+					onclick="requestSend('demo/demolist.do')">전체조회</button>
 				</div>
 			</div>
 			

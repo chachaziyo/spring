@@ -133,6 +133,28 @@
 	    <scope>provided</scope>
 	</dependency>
 	
+	<!--암호화-->
+	<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-core -->
+	<dependency>
+	    <groupId>org.springframework.security</groupId>
+	    <artifactId>spring-security-core</artifactId>
+	    <version>${org.springframework-version}</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-web -->
+	<dependency>
+	    <groupId>org.springframework.security</groupId>
+	    <artifactId>spring-security-web</artifactId>
+	    <version>${org.springframework-version}</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/org.springframework.security/spring-security-config -->
+	<dependency>
+	    <groupId>org.springframework.security</groupId>
+	    <artifactId>spring-security-config</artifactId>
+	    <version>${org.springframework-version}</version>
+	</dependency>
+	
 	<!--
 		데이터베이스 연동하기 위한 라이브러리 받아오기(mybatis)
 		1.ojdbc8 or 6 -> 메이븐레포지토리에서 제공하는것이 작동x 별도로 다운받아서 lib폴더에 넣어줘야함
@@ -177,7 +199,8 @@
 			<artifactId>junit</artifactId>
 			<version>4.7</version>
 			<scope>test</scope>
-		</dependency>        
+		</dependency>  
+		
 	</dependencies>
     <build>
         <plugins>
